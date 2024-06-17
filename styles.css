@@ -35,7 +35,7 @@ header h1 {
     font-size: 2.5rem;
 }
 
-hr{
+hr {
     background: none;
     color: none;
     border: none;
@@ -72,31 +72,41 @@ section.dark {
     background: #001f3f;
     color: #fff;
 }
-section .container p{
-    width: 900px;
+
+section .container p {
+    max-width: 900px;
+    line-height: 1.5;
 }
-section .exp{
+
+section .exp {
     margin-top: 90px;
 }
-section .lightt{
+
+section .lightt {
     font-weight: 100;
     font-style: italic;
 }
-section .about{
+
+section .about {
     line-height: 1.5;
 }
-#portfolio h2{
+
+#portfolio h2 {
     color: #001f3f;
 }
-#portfolio h3{
+
+#portfolio h3 {
     text-decoration: underline;
 }
-#portfolio p{
+
+#portfolio p {
     margin-bottom: 90px;
 }
+
 #portfolio {
     background: #4479af7a;
 }
+
 /* Gallery Styles */
 .gallery {
     display: grid;
@@ -109,6 +119,10 @@ section .about{
     height: auto;
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery img:hover {
+    cursor: pointer;
 }
 
 /* Form Styles */
@@ -140,6 +154,7 @@ form button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
 form button:hover {
@@ -163,10 +178,15 @@ footer {
 
     nav ul {
         flex-direction: column;
+        margin-top: 1rem;
     }
 
     nav ul li {
         margin: 0.5rem 0;
+    }
+
+    section .container p {
+        max-width: 100%;
     }
 
     .gallery {
@@ -181,6 +201,10 @@ footer {
 @media (max-width: 480px) {
     header {
         padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
     }
 
     section {
